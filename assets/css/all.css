@@ -131,9 +131,11 @@ a{
     }
     #display-flex-media{
         position: absolute;
-        top: 0;
-        right: 1rem;
-        transform: translateY(4.5rem);
+        top: 10.5rem;
+        left: 50%;   
+        transform: translate(-50%, -50%);
+        width: 99% !important;
+        display: flex;
     }
     #burger-display, #x-display{
         transition: 1s ease-in-out;
