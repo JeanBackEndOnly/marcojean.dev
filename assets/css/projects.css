@@ -1,32 +1,75 @@
-.display-margin-projects{
+.display-margin-projects {
     margin-top: 6rem !important;
 }
-.max-height-img{
+
+.max-height-img {
     max-height: 20vh;
 }
-.hover-link{
+
+.hover-link {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(1px);
     transition: 0.5s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-.hover-project{
+
+.hover-project {
     transition: 0.5s ease;
+    height: 100%;
 }
-.hover-project:hover .hover-link{
+
+.hover-project:hover .hover-link {
     display: flex !important;
     border: solid 1px red !important;
 }
-.hover-project:hover{
+
+.hover-project:hover {
     border: solid 1px red !important;
 }
-.min-project-height{
+
+.min-project-height {
     max-height: 70vh !important;
     min-height: 60vh !important;
 }
-.circle-tech{
+
+.circle-tech {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: aliceblue;
+}
+
+/* Custom flex-wrap replacement */
+.flex-wrap-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .max-height{
+    max-height: 50vh;
+} */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .min-project-height {
+        min-height: auto !important;
+        max-height: none !important;
+    }
+    
+    .max-height-img {
+        max-height: 30vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-margin-projects {
+        margin-top: 3rem !important;
+    }
+    
+    .max-height-img {
+        max-height: 40vh;
+    }
 }
